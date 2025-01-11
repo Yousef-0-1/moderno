@@ -168,7 +168,12 @@ header nav ul a:not(:last-child){
   font-size: 70px;
   margin: 0px 0 55px 0;
 }
-
+@media (max-width: 767px){
+ .landing .text h1 {
+   letter-spacing: 1;
+   font-size: 60px;
+ }
+}
 .landing .text p {
   font-weight: 500;
   line-height: 1.6;
@@ -332,9 +337,12 @@ header nav ul a:not(:last-child){
   .stories .project { 
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .stories .project .image,.stories .project .info {
     width: 100%;
+  }
+  .stories .project .info{
     border-left:0.5px solid var(--secondary-color) ;
     border-top: none;
   }
@@ -361,7 +369,7 @@ header nav ul a:not(:last-child){
   top: 50%;
   left: 50%;
   transform: translate(-50% , -50%);
-  padding: 25px 35px;
+  padding: 25px 45px;
   background-color: var(--secondary-color);
   color: var(--main-color);
   border-radius: 5px;
@@ -369,7 +377,7 @@ header nav ul a:not(:last-child){
 .contacts .iframe::after {
   content: "";
   position: absolute;
-  top: calc(50% + 38px);
+  top: calc(50% + 40.5px);
   left: 50%;
   transform: translate(-50% , -50%);
   border: 10px solid;
@@ -485,6 +493,7 @@ header nav ul a:not(:last-child){
 }
 .footer .text {
   color: white;
+  font-size: 10px;
 }
 .footer .social a{
   font-size: 12px;
