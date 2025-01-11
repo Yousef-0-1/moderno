@@ -377,9 +377,8 @@ header nav ul a:not(:last-child){
 .contacts .iframe::after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: calc(50% - 60px);
   left: 50%;
-  translateX(-50%);
   width: 0;
   height: 0;
   transform: translateX(-50%);
